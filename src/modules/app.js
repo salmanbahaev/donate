@@ -1,16 +1,19 @@
-import { DonateForm } from "./donate-form"
+import { DonateForm } from "./donate-form";
+import { DonateList } from "./donate-list";
 
 export default class App {
-  #donateForm
+  #donateForm;
+  #donateList;
 
   constructor() {
-    this.#donateForm = new DonateForm()
+    this.#donateForm = new DonateForm();
+    this.#donateList = new DonateList();
   }
 
-
   run() {
-    const h2 = document.createElement('h2')
-    h2.textContent = 'Well, we begine'
-    document.body.append(h2, this.#donateForm.render())
+    document.body.append(
+      this.#donateForm.render(),
+      this.#donateList.render()
+    );
   }
 }

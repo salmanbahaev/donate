@@ -1,6 +1,6 @@
 :root {
-    --main-background: #4666B1;
-    --primary-color: #4666B1;
+    --main-background: #4666b1;
+    --primary-color: #4666b1;
     --default-text-color: #ffffff;
     --donate-item-text-color: #000000;
     --default-border-color: #ffffff;
@@ -15,7 +15,8 @@ body {
 
     display: flex;
     justify-content: space-evenly;
-    
+    align-items: center;
+
     flex-wrap: wrap;
     padding: 20px;
     overflow: hidden;
@@ -42,7 +43,7 @@ body {
 }
 
 .donates-container .donate-item:nth-child(odd) {
-    background: #E1F1FF;
+    background: #e1f1ff;
 }
 
 .donates-container .donate-item:nth-child(even) {
@@ -56,7 +57,6 @@ body {
 .donate-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     height: 75%;
 }
@@ -103,7 +103,7 @@ body {
     background: none;
     transition: 0.3s ease;
     box-shadow: none;
-    
+
     margin-top: 30px;
 }
 
