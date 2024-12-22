@@ -9,6 +9,7 @@ module.exports = ({ development }) => ({
         open: true,
         compress: true,
         port: 8000,
+        hot: true,
     },
     output: {
         path: `${__dirname}/dist`,
