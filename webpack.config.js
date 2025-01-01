@@ -17,7 +17,7 @@ module.exports = ({ development }) => ({
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: `${__dirname}/index.html`,
     }),
     new CleanWebpackPlugin(),
   ],
