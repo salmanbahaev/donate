@@ -1,3 +1,5 @@
+import { CURRENCY_SIGN } from "../core/constants"
+
 export class DonateList {
   constructor(donates) {
     this.donates = donates
@@ -15,7 +17,7 @@ export class DonateList {
       donateItem.textContent = `${donate.date} - `
       
       const donateItemMoney = document.createElement('b')
-      donateItemMoney.textContent = `${donate.amount}$`
+      donateItemMoney.textContent = `${donate.amount}${CURRENCY_SIGN}`
       donateItem.append(donateItemMoney)
       
       this.donatesContainer.append(donateItem)
